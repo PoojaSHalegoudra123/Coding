@@ -44,3 +44,13 @@ public static void main(String[] args){
 System.out.println(result);
 }
 }*/
+<<<<<<< HEAD
+=======
+// if
+/*double add(int a, double b){
+    return a+b;
+double add(double a, int b){
+    return a+b;
+}}*/
+//both r same here
+>>>>>>> d48a6fa (java)
