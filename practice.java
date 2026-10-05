@@ -74,17 +74,37 @@
 
 //
 
+// public class practice {
+//     public static void main(String[] args) {
+//         int num = 1234;
+//         int sum = 0;
+
+//         while (num > 0) {
+//             int digit = num % 10;
+//             sum = sum + digit;
+//             num = num / 10;
+//         }
+
+//         System.out.println("Sum = " + sum);
+//     }
+// }
+
 public class practice {
     public static void main(String[] args) {
-        int num = 1234;
-        int sum = 0;
+        int num = 121;
+        int original = num;
+        int reverse = 0;
 
         while (num > 0) {
             int digit = num % 10;
-            sum = sum + digit;
+            reverse = reverse * 10 + digit;
             num = num / 10;
         }
 
-        System.out.println("Sum = " + sum);
+        if (original == reverse) {
+            System.out.println("Palindrome");
+        } else {
+            System.out.println("Not Palindrome");
+        }
     }
 }
