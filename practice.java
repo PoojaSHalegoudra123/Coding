@@ -59,15 +59,30 @@
 //     }
 // }
 
+// public class practice {
+//     public static void main(String[] args) {
+//         int n = 5;
+//         int fact = 1;
+
+//         for (int i = 1; i <= n; i++) {
+//             fact = fact * i;
+//         }
+
+//         System.out.println("Factorial = " + fact);
+//     }
+// }
+
 public class practice {
     public static void main(String[] args) {
-        int n = 5;
-        int fact = 1;
+        int num = 1234;
+        int reverse = 0;
 
-        for (int i = 1; i <= n; i++) {
-            fact = fact * i;
+        while (num > 0) {
+            int digit = num % 10;
+            reverse = reverse * 10 + digit;
+            num = num / 10;
         }
 
-        System.out.println("Factorial = " + fact);
+        System.out.println("Reverse = " + reverse);
     }
 }
