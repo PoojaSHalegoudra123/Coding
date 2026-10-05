@@ -36,15 +36,25 @@
 //     }
 // }
 
+// public class practice {
+//     public static void main(String[] args) {
+//         int n = 5;
+//         int sum = 0;
+
+//         for (int i = 1; i <= n; i++) {
+//             sum = sum + i;
+//         }
+
+//         System.out.println("Sum = " + sum);
+//     }
+// }
+
 public class practice {
     public static void main(String[] args) {
         int n = 5;
-        int sum = 0;
 
-        for (int i = 1; i <= n; i++) {
-            sum = sum + i;
+        for (int i = 1; i <= 10; i++) {
+            System.out.println(n + " x " + i + " = " + (n * i));
         }
-
-        System.out.println("Sum = " + sum);
     }
 }
