@@ -9,14 +9,29 @@
 //     }
 // }
 
+// public class practice {
+//     public static void main(String[] args) {
+//         int num = 15;
+
+//         if (num % 2 == 0) {
+//             System.out.println("Even");
+//         } else {
+//             System.out.println("Odd");
+//         }
+//     }
+// }
 public class practice {
     public static void main(String[] args) {
-        int num = 15;
+        int a = 25;
+        int b = 40;
+        int c = 30;
 
-        if (num % 2 == 0) {
-            System.out.println("Even");
+        if (a > b && a > c) {
+            System.out.println(a + " is largest");
+        } else if (b > a && b > c) {
+            System.out.println(b + " is largest");
         } else {
-            System.out.println("Odd");
+            System.out.println(c + " is largest");
         }
     }
 }
