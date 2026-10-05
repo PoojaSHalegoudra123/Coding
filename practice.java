@@ -20,18 +20,31 @@
 //         }
 //     }
 // }
+// public class practice {
+//     public static void main(String[] args) {
+//         int a = 25;
+//         int b = 40;
+//         int c = 30;
+
+//         if (a > b && a > c) {
+//             System.out.println(a + " is largest");
+//         } else if (b > a && b > c) {
+//             System.out.println(b + " is largest");
+//         } else {
+//             System.out.println(c + " is largest");
+//         }
+//     }
+// }
+
 public class practice {
     public static void main(String[] args) {
-        int a = 25;
-        int b = 40;
-        int c = 30;
+        int n = 5;
+        int sum = 0;
 
-        if (a > b && a > c) {
-            System.out.println(a + " is largest");
-        } else if (b > a && b > c) {
-            System.out.println(b + " is largest");
-        } else {
-            System.out.println(c + " is largest");
+        for (int i = 1; i <= n; i++) {
+            sum = sum + i;
         }
+
+        System.out.println("Sum = " + sum);
     }
 }
