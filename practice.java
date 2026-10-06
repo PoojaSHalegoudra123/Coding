@@ -245,24 +245,25 @@
 //         System.out.println("Second Largest = " + second);
 //     }
 // }
+//
 class practice {
     public static void main(String[] args) {
 
-        int[] arr = {10, -5, 20, -15, 30, -2};
+        int n = 153;
+        int original = n;
+        int sum = 0;
 
-        int positive = 0;
-        int negative = 0;
+        while (n != 0) {
 
-        for (int i = 0; i < arr.length; i++) {
-
-            if (arr[i] > 0) {
-                positive++;
-            } else if (arr[i] < 0) {
-                negative++;
-            }
+            int digit = n % 10;
+            sum = sum + digit * digit * digit;
+            n = n / 10;
         }
 
-        System.out.println("Positive = " + positive);
-        System.out.println("Negative = " + negative);
+        if (sum == original) {
+            System.out.println("Armstrong Number");
+        } else {
+            System.out.println("Not Armstrong Number");
+        }
     }
 }
