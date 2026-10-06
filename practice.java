@@ -109,18 +109,34 @@
 //     }
 // }
 
-public class practice {
-    public static void main(String[] args) {
-        int[] arr = {10, 50, 20, 80, 30};
+// public class practice {
+//     public static void main(String[] args) {
+//         int[] arr = {10, 50, 20, 80, 30};
 
-        int largest = arr[0];
+//         int largest = arr[0];
 
-        for (int i = 1; i < arr.length; i++) {
-            if (arr[i] > largest) {
-                largest = arr[i];
-            }
-        }
+//         for (int i = 1; i < arr.length; i++) {
+//             if (arr[i] > largest) {
+//                 largest = arr[i];
+//             }
+//         }
 
-        System.out.println("Largest = " + largest);
-    }
-}
+//         System.out.println("Largest = " + largest);
+//     }
+// }
+// class practice {
+//     public static void main(String[] args) {
+
+//         int[] numbers = {10, 45, 23, 67, 12};
+
+//         int largest = numbers[0];
+
+//         for (int i = 1; i < numbers.length; i++) {
+//             if (numbers[i] > largest) {
+//                 largest = numbers[i];
+//             }
+//         }
+
+//         System.out.println("Largest = " + largest);
+//     }
+// }
