@@ -177,16 +177,37 @@
 //         }
 //     }
 // }
+// class practice {
+//     public static void main(String[] args) {
+
+//         int[] arr = {10, 20, 30, 40, 50};
+//         int sum = 0;
+
+//         for (int i = 0; i < arr.length; i++) {
+//             sum = sum + arr[i];
+//         }
+
+//         System.out.println("Sum = " + sum);
+//     }
+// }
 class practice {
     public static void main(String[] args) {
 
-        int[] arr = {10, 20, 30, 40, 50};
-        int sum = 0;
+        int[] arr = {10, 15, 20, 25, 30, 35};
+
+        int even = 0;
+        int odd = 0;
 
         for (int i = 0; i < arr.length; i++) {
-            sum = sum + arr[i];
+
+            if (arr[i] % 2 == 0) {
+                even++;
+            } else {
+                odd++;
+            }
         }
 
-        System.out.println("Sum = " + sum);
+        System.out.println("Even numbers = " + even);
+        System.out.println("Odd numbers = " + odd);
     }
 }
