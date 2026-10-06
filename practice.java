@@ -223,25 +223,46 @@
 //         }
 //     }
 // }
+// class practice {
+//     public static void main(String[] args) {
+
+//         int[] arr = {10, 50, 30, 80, 40};
+
+//         int largest = arr[0];
+//         int second = arr[0];
+
+//         for (int i = 0; i < arr.length; i++) {
+
+//             if (arr[i] > largest) {
+//                 second = largest;
+//                 largest = arr[i];
+//             } else if (arr[i] > second && arr[i] != largest) {
+//                 second = arr[i];
+//             }
+//         }
+
+//         System.out.println("Largest = " + largest);
+//         System.out.println("Second Largest = " + second);
+//     }
+// }
 class practice {
     public static void main(String[] args) {
 
-        int[] arr = {10, 50, 30, 80, 40};
+        int[] arr = {10, -5, 20, -15, 30, -2};
 
-        int largest = arr[0];
-        int second = arr[0];
+        int positive = 0;
+        int negative = 0;
 
         for (int i = 0; i < arr.length; i++) {
 
-            if (arr[i] > largest) {
-                second = largest;
-                largest = arr[i];
-            } else if (arr[i] > second && arr[i] != largest) {
-                second = arr[i];
+            if (arr[i] > 0) {
+                positive++;
+            } else if (arr[i] < 0) {
+                negative++;
             }
         }
 
-        System.out.println("Largest = " + largest);
-        System.out.println("Second Largest = " + second);
+        System.out.println("Positive = " + positive);
+        System.out.println("Negative = " + negative);
     }
 }
