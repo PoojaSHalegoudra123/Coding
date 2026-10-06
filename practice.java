@@ -140,19 +140,40 @@
 //         System.out.println("Largest = " + largest);
 //     }
 // }
+// class practice {
+//     public static void main(String[] args) {
+
+//         int[] numbers = {10, 45, 23, 67, 12};
+
+//         int smallest = numbers[0];
+
+//         for (int i = 1; i < numbers.length; i++) {
+//             if (numbers[i] < smallest) {
+//                 smallest = numbers[i];
+//             }
+//         }
+
+//         System.out.println("Smallest = " + smallest);
+//     }
+// }
 class practice {
     public static void main(String[] args) {
 
-        int[] numbers = {10, 45, 23, 67, 12};
+        int[] numbers = {10, 20, 30, 40, 50};
+        int target = 30;
 
-        int smallest = numbers[0];
+        boolean found = false;
 
-        for (int i = 1; i < numbers.length; i++) {
-            if (numbers[i] < smallest) {
-                smallest = numbers[i];
+        for (int i = 0; i < numbers.length; i++) {
+            if (numbers[i] == target) {
+                System.out.println("Element found at index " + i);
+                found = true;
+                break;
             }
         }
 
-        System.out.println("Smallest = " + smallest);
+        if (!found) {
+            System.out.println("Element not found");
+        }
     }
 }
